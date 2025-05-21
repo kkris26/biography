@@ -1,0 +1,70 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f5f5f5;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(168, 168, 168);
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.menu li {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #800000;
+}
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile {
+  height: 90vh;
+}
+.profile img {
+  height: 100%;
+}
+#hero .information h1 {
+  font-size: 90px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #800000;
+}
+#hero .information p {
+  font-size: 24px;
+}
+#hero .information button {
+  padding: 12px 24px;
+  background: #800000;
+  color: white;
+  font-size: 24px;
+  margin-top: 40px;
+  border: none;
+}
+#tentang {
+  background: #800000;
+  min-height: 100vh;
+}
