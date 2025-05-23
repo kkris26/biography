@@ -177,7 +177,7 @@ body {
   flex-direction: column;
   gap: 5px;
 }
-#cerita .detail p{
+#cerita .detail p {
   font-size: 16px;
   line-height: 24px;
 }
@@ -187,11 +187,10 @@ body {
   font-size: 32px;
   color: var(--primary-color);
 }
-#cerita .reverse{
+#cerita .reverse {
   flex-direction: row-reverse;
-
 }
-.box-container{
+.box-container {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -229,3 +228,16 @@ body {
   position: absolute;
   left: -24px;
 }
+/* karya */
+#karya {
+  height: 100vh;
+  background-color: var(--second-color);
+  padding: 100px 0;
+}
+#karya h2{
+  font-family: var(--primary-font);
+  font-size: 50px;
+  color: var(--primary-color);
+  text-align: center;
+}
+/* karya */
