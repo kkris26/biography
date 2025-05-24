@@ -273,3 +273,29 @@ body {
   overflow: hidden;
 }
 /* karya */
+/* footer */
+#footer {
+  background-color: var(--primary-color);
+}
+#footer .container {
+  padding: 100px 0;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#footer .container h2 {
+  font-family: var(--primary-font);
+  font-size: 36px;
+  color: var(--second-color);
+}
+#footer .container ul {
+  display: flex;
+  gap: 20px;
+}
+#footer .container ul li {
+  list-style-type: none;
+  color: white;
+}
+/* footer */
