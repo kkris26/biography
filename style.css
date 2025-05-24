@@ -227,6 +227,7 @@ body {
   color: white;
   position: absolute;
   left: -24px;
+  font-weight: 600;
 }
 /* karya */
 #karya {
@@ -239,5 +240,8 @@ body {
   font-size: 50px;
   color: var(--primary-color);
   text-align: center;
+}
+#karya .container{
+  gap: 50px;
 }
 /* karya */
