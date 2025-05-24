@@ -231,17 +231,45 @@ body {
 }
 /* karya */
 #karya {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--second-color);
   padding: 100px 0;
 }
-#karya h2{
+#karya h2 {
   font-family: var(--primary-font);
   font-size: 50px;
   color: var(--primary-color);
   text-align: center;
 }
-#karya .container{
+#karya .container {
   gap: 50px;
+}
+
+#karya .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+#karya .card-container .card {
+  width: 100%;
+}
+#karya .card-container .card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 8px;
+  background-color: black;
+}
+#karya .card-container .card h4 {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 28px;
+}
+#karya .card-container .card p {
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 /* karya */
