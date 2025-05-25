@@ -292,6 +292,7 @@ li {
 }
 #karya .card-container .card {
   width: 100%;
+
 }
 #karya .card-container .card img {
   width: 100%;
@@ -299,6 +300,9 @@ li {
   object-fit: cover;
   margin-bottom: 8px;
   background-color: black;
+}
+#karya .card-container .card img:hover {
+  scale: 1.04;
 }
 #karya .card-container .card h4 {
   font-family: var(--primary-font);
