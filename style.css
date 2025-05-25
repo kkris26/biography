@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: 0.3s ease-in-out;
 }
 :root {
   --primary-color: #800000;
@@ -22,36 +23,62 @@
 body {
   background: var(--second-color);
 }
+a {
+  text-decoration: none;
+}
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
   width: 100%;
-  background: var(--transparent);
+  background: var(--second-color);
   z-index: 99;
+  position: fixed;
 }
 .container {
   width: 80%;
   margin: auto;
   display: flex;
 }
+.navbar .box {
+  width: 200px;
+  display: flex;
+}
+.navbar .box2 {
+  justify-content: end;
+}
 .justify-between {
   justify-content: space-between;
 }
-
-#hero .button-primary {
-  margin-top: 30px;
+.btn-primary {
+  padding: 10px 24px;
+  background: var(--primary-color);
+  color: var(--white);
+  font-size: 16px;
+  border: 1px solid var(--primary-color);
+  display: inline-block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  width: fit-content;
 }
+.btn-primary:hover {
+  color: var(--primary-color);
+  background-color: var(--transparent);
+}
+
 .menu {
   display: flex;
   gap: 40px;
 }
-.h-screen {
-  min-height: 90vh;
+li {
+  list-style-type: none;
 }
-.menu li {
+
+.menu li a {
   list-style-type: none;
   font-size: 16px;
   font-weight: 500;
@@ -74,16 +101,20 @@ body {
 .flex-col {
   flex-direction: column;
 }
-.profile {
-  height: 90vh;
+#hero .profile {
+  height: 100vh;
   width: 100%;
   position: relative;
 }
-.profile img {
-  height: 100%;
+#hero .profile img {
+  height: 95%;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+#hero .information {
+  margin-top: 50px;
 }
 
 #hero .information h1 {
@@ -97,24 +128,21 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
-.button-primary {
-  padding: 12px 24px;
-  background: var(--primary-color);
-  color: var(--white);
-  font-size: 20px;
-  border: none;
+#hero .btn-primary {
+  margin-top: 20px;
 }
+
 #tentang {
   background: var(--primary-color);
 }
 
-.logo h1 {
+.logo a {
   font-family: var(--primary-font);
-  font-style: normal;
+  font-size: 32px;
   color: var(--primary-color);
 }
 #tentang .container {
-  min-height: 100vh;
+  padding: 120px 0;
   gap: 80px;
 }
 
@@ -152,7 +180,7 @@ body {
 }
 #cerita h2 {
   font-family: var(--primary-font);
-  font-size: 56px;
+  font-size: 54px;
   text-align: center;
   margin-bottom: 80px;
   color: var(--primary-color);
@@ -206,7 +234,7 @@ body {
 }
 #quote .container h2 {
   font-family: var(--second-font);
-  font-size: 50px;
+  font-size: 54px;
   color: var(--white);
 }
 #quote .container h2 span {
@@ -237,12 +265,24 @@ body {
 }
 #karya h2 {
   font-family: var(--primary-font);
-  font-size: 50px;
+  font-size: 54px;
   color: var(--primary-color);
   text-align: center;
 }
 #karya .container {
   gap: 50px;
+}
+#karya .btn {
+  background-color: var(--primary-color);
+  display: inline-block;
+  padding: 12px 24px;
+  margin: auto;
+  color: white;
+  border: 1px solid var(--primary-color);
+}
+#karya .btn:hover {
+  color: var(--primary-color);
+  background-color: var(--transparent);
 }
 
 #karya .card-container {
@@ -274,28 +314,49 @@ body {
 }
 /* karya */
 /* footer */
-#footer {
+#kontak {
   background-color: var(--primary-color);
 }
-#footer .container {
+#kontak .container {
   padding: 100px 0;
   display: flex;
-  gap: 40px;
+  gap: 30px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#footer .container h2 {
+#kontak .kontak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+#kontak .kontak p {
+  font-size: 16px;
+  color: var(--white);
+  text-align: center;
+  width: 700px;
+}
+#kontak .container h2 {
   font-family: var(--primary-font);
-  font-size: 36px;
+  font-size: 54px;
   color: var(--second-color);
 }
-#footer .container ul {
+#kontak .container ul {
   display: flex;
   gap: 20px;
 }
-#footer .container ul li {
+#kontak .container ul li {
   list-style-type: none;
-  color: white;
+}
+#kontak .container ul li a {
+  color: var(--white);
+}
+#kontak .copyright {
+  color: var(--white);
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--second-color);
+  font-size: 14px;
 }
 /* footer */
